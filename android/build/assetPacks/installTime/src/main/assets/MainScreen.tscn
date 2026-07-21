@@ -1,0 +1,167 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://assets/mainscreennobuttonsorplanetbig.png" type="Texture" id=1]
+[ext_resource path="res://assets/mainscreenbuttoncreditsbig.png" type="Texture" id=2]
+[ext_resource path="res://assets/notburningearthbig.png" type="Texture" id=3]
+[ext_resource path="res://MainScreenMusic.gd" type="Script" id=4]
+[ext_resource path="res://assets/mainscreenbuttonnewgamebig.png" type="Texture" id=5]
+[ext_resource path="res://assets/mainscreenbuttonloadsavebig.png" type="Texture" id=6]
+[ext_resource path="res://assets/burningdeadearthbig.png" type="Texture" id=7]
+[ext_resource path="res://CreditsButton.gd" type="Script" id=8]
+[ext_resource path="res://NewGameButton.gd" type="Script" id=9]
+[ext_resource path="res://assets/mixkit-swamp-and-jungle-birds-ambience-325.wav" type="AudioStream" id=10]
+[ext_resource path="res://MainScreen.gd" type="Script" id=11]
+[ext_resource path="res://LoadSaveButton.gd" type="Script" id=12]
+[ext_resource path="res://NoOverwrite.gd" type="Script" id=13]
+[ext_resource path="res://YesOverwrite.gd" type="Script" id=14]
+[ext_resource path="res://transparent_buttons.tres" type="Theme" id=15]
+[ext_resource path="res://VTtheme.tres" type="Theme" id=16]
+[ext_resource path="res://assets/mixkit-rioting-crowd-376.wav" type="AudioStream" id=17]
+[ext_resource path="res://ScreamingCrowdMusic.gd" type="Script" id=18]
+[ext_resource path="res://Click.gd" type="Script" id=19]
+[ext_resource path="res://assets/mixkit-sci-fi-click-900.mp3" type="AudioStream" id=20]
+[ext_resource path="res://assets/sound_off.png" type="Texture" id=21]
+[ext_resource path="res://assets/sound_on.png" type="Texture" id=22]
+[ext_resource path="res://Sound.gd" type="Script" id=23]
+[ext_resource path="res://assets/musicbuttonoff.png" type="Texture" id=24]
+[ext_resource path="res://assets/musicbuttonon.png" type="Texture" id=25]
+[ext_resource path="res://Music.gd" type="Script" id=26]
+[ext_resource path="res://VT323.ttf" type="DynamicFontData" id=27]
+[ext_resource path="res://DonateButton.gd" type="Script" id=28]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 27 )
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 11 )
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 1080.0
+margin_bottom = 2340.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="NewGameButton" type="TextureButton" parent="."]
+margin_left = 142.0
+margin_top = 1434.0
+margin_right = 958.0
+margin_bottom = 1614.0
+texture_normal = ExtResource( 5 )
+script = ExtResource( 9 )
+
+[node name="LoadSaveButton" type="TextureButton" parent="."]
+visible = false
+margin_left = 134.0
+margin_top = 1626.0
+margin_right = 950.0
+margin_bottom = 1806.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 12 )
+
+[node name="CreditsButton" type="TextureButton" parent="."]
+margin_left = 144.0
+margin_top = 2004.0
+margin_right = 960.0
+margin_bottom = 2184.0
+texture_normal = ExtResource( 2 )
+script = ExtResource( 8 )
+
+[node name="Planet" type="TextureButton" parent="."]
+margin_left = 290.0
+margin_top = 608.0
+margin_right = 956.0
+margin_bottom = 1340.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 7 )
+
+[node name="OverwriteSavePanel" type="Panel" parent="."]
+visible = false
+margin_left = 90.0
+margin_top = 920.0
+margin_right = 990.0
+margin_bottom = 1420.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="OverwriteSavePanel"]
+margin_left = 25.0
+margin_top = 10.0
+margin_right = 875.0
+margin_bottom = 260.0
+theme = ExtResource( 16 )
+bbcode_enabled = true
+bbcode_text = "[center]overwrite existing save?[/center]"
+text = "overwrite existing save?"
+
+[node name="YesOverwrite" type="Button" parent="OverwriteSavePanel"]
+margin_left = 180.0
+margin_top = 300.0
+margin_right = 380.0
+margin_bottom = 450.0
+theme = ExtResource( 15 )
+text = "yes"
+script = ExtResource( 14 )
+
+[node name="NoOverwrite" type="Button" parent="OverwriteSavePanel"]
+margin_left = 520.0
+margin_top = 300.0
+margin_right = 720.0
+margin_bottom = 450.0
+theme = ExtResource( 15 )
+text = "no"
+script = ExtResource( 13 )
+
+[node name="MainScreenMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+script = ExtResource( 4 )
+
+[node name="ScreamingCrowdMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+script = ExtResource( 18 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+script = ExtResource( 19 )
+
+[node name="Sound" type="TextureButton" parent="."]
+margin_left = 954.0
+margin_top = 35.0
+margin_right = 1054.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 100, 100 )
+toggle_mode = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 21 )
+script = ExtResource( 23 )
+
+[node name="Music" type="TextureButton" parent="."]
+margin_left = 35.0
+margin_top = 30.0
+margin_right = 135.0
+margin_bottom = 156.0
+theme = ExtResource( 15 )
+toggle_mode = true
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 24 )
+script = ExtResource( 26 )
+
+[node name="DonateButton" type="Button" parent="."]
+margin_left = 240.0
+margin_top = 1818.0
+margin_right = 840.0
+margin_bottom = 1988.0
+theme = ExtResource( 15 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "- donate -"
+script = ExtResource( 28 )
+
+[connection signal="pressed" from="NewGameButton" to="Click" method="_on_NewGameButton_pressed"]
+[connection signal="button_down" from="Planet" to="MainScreenMusic" method="_on_Planet_button_down"]
+[connection signal="button_down" from="Planet" to="ScreamingCrowdMusic" method="_on_Planet_button_down"]
+[connection signal="button_up" from="Planet" to="MainScreenMusic" method="_on_Planet_button_up"]
+[connection signal="button_up" from="Planet" to="ScreamingCrowdMusic" method="_on_Planet_button_up"]
+[connection signal="pressed" from="OverwriteSavePanel/NoOverwrite" to="Click" method="_on_NoOverwrite_pressed"]
+[connection signal="toggled" from="Sound" to="MainScreenMusic" method="_on_Sound_toggled"]

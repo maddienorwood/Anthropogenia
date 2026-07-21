@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Relaxing Ballad.mp3-d3e2529f26997715c0f5a959237ad4f0.mp3str"
+
+[deps]
+
+source_file="res://assets/Relaxing Ballad.mp3"
+dest_files=[ "res://.import/Relaxing Ballad.mp3-d3e2529f26997715c0f5a959237ad4f0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

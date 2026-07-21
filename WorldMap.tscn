@@ -1,0 +1,2770 @@
+[gd_scene load_steps=228 format=2]
+
+[ext_resource path="res://MapCamera.gd" type="Script" id=1]
+[ext_resource path="res://assets/pixelatedlinedworldmapbig.png" type="Texture" id=2]
+[ext_resource path="res://MenuButton.gd" type="Script" id=3]
+[ext_resource path="res://assets/menubutton.png" type="Texture" id=4]
+[ext_resource path="res://assets/countries/madagascar1.png" type="Texture" id=5]
+[ext_resource path="res://assets/pixelatedlinedworldmapbigright.png" type="Texture" id=6]
+[ext_resource path="res://assets/infobutton.png" type="Texture" id=7]
+[ext_resource path="res://InfoButton.gd" type="Script" id=8]
+[ext_resource path="res://VTthemebig.tres" type="Theme" id=9]
+[ext_resource path="res://BackButtonSettings.gd" type="Script" id=10]
+[ext_resource path="res://Madagascar.gd" type="Script" id=11]
+[ext_resource path="res://CountryInfo.gd" type="Script" id=12]
+[ext_resource path="res://WorldMap.gd" type="Script" id=13]
+[ext_resource path="res://VTsmalltheme.tres" type="Theme" id=14]
+[ext_resource path="res://assets/pausebutton.png" type="Texture" id=15]
+[ext_resource path="res://DateTimer.gd" type="Script" id=16]
+[ext_resource path="res://assets/continuebutton.png" type="Texture" id=17]
+[ext_resource path="res://InfoPop.gd" type="Script" id=18]
+[ext_resource path="res://Date.gd" type="Script" id=19]
+[ext_resource path="res://PauseButton.gd" type="Script" id=20]
+[ext_resource path="res://Clock.gd" type="Script" id=21]
+[ext_resource path="res://couriernew.tres" type="Theme" id=22]
+[ext_resource path="res://Argentina.gd" type="Script" id=23]
+[ext_resource path="res://Australia.gd" type="Script" id=24]
+[ext_resource path="res://Bolivia.gd" type="Script" id=25]
+[ext_resource path="res://Brazil.gd" type="Script" id=26]
+[ext_resource path="res://Canada.gd" type="Script" id=27]
+[ext_resource path="res://Central Africa.gd" type="Script" id=28]
+[ext_resource path="res://Central America.gd" type="Script" id=29]
+[ext_resource path="res://Central Asia.gd" type="Script" id=30]
+[ext_resource path="res://Chile.gd" type="Script" id=31]
+[ext_resource path="res://China.gd" type="Script" id=32]
+[ext_resource path="res://Eastern Europe.gd" type="Script" id=33]
+[ext_resource path="res://Finland.gd" type="Script" id=34]
+[ext_resource path="res://Greenland.gd" type="Script" id=35]
+[ext_resource path="res://Iceland.gd" type="Script" id=36]
+[ext_resource path="res://India.gd" type="Script" id=37]
+[ext_resource path="res://Indonesia.gd" type="Script" id=38]
+[ext_resource path="res://Iran.gd" type="Script" id=39]
+[ext_resource path="res://Ireland.gd" type="Script" id=40]
+[ext_resource path="res://Japan.gd" type="Script" id=41]
+[ext_resource path="res://Kazakhstan.gd" type="Script" id=42]
+[ext_resource path="res://Korea.gd" type="Script" id=43]
+[ext_resource path="res://Malaysia.gd" type="Script" id=44]
+[ext_resource path="res://Mexico.gd" type="Script" id=45]
+[ext_resource path="res://Mongolia.gd" type="Script" id=46]
+[ext_resource path="res://New Zealand.gd" type="Script" id=47]
+[ext_resource path="res://Northeast Africa.gd" type="Script" id=48]
+[ext_resource path="res://Northwest Africa.gd" type="Script" id=49]
+[ext_resource path="res://Norway.gd" type="Script" id=50]
+[ext_resource path="res://Papua New Guinea.gd" type="Script" id=51]
+[ext_resource path="res://Paraguay.gd" type="Script" id=52]
+[ext_resource path="res://Peru.gd" type="Script" id=53]
+[ext_resource path="res://Phillippines.gd" type="Script" id=54]
+[ext_resource path="res://Russia.gd" type="Script" id=55]
+[ext_resource path="res://Northern South America.gd" type="Script" id=56]
+[ext_resource path="res://South Asia.gd" type="Script" id=57]
+[ext_resource path="res://Southern Africa.gd" type="Script" id=58]
+[ext_resource path="res://Sweden.gd" type="Script" id=59]
+[ext_resource path="res://UK.gd" type="Script" id=60]
+[ext_resource path="res://USA.gd" type="Script" id=61]
+[ext_resource path="res://Uruguay.gd" type="Script" id=62]
+[ext_resource path="res://West Asia.gd" type="Script" id=63]
+[ext_resource path="res://West Europe.gd" type="Script" id=64]
+[ext_resource path="res://assets/countries/argentina1.png" type="Texture" id=65]
+[ext_resource path="res://assets/countries/bolivia1.png" type="Texture" id=66]
+[ext_resource path="res://assets/countries/australia1.png" type="Texture" id=67]
+[ext_resource path="res://assets/countries/brazil1.png" type="Texture" id=68]
+[ext_resource path="res://assets/countries/canada1.png" type="Texture" id=69]
+[ext_resource path="res://assets/countries/centralafrica1.png" type="Texture" id=70]
+[ext_resource path="res://assets/countries/centralamerica1.png" type="Texture" id=71]
+[ext_resource path="res://assets/countries/centralasia1.png" type="Texture" id=72]
+[ext_resource path="res://assets/countries/chile1.png" type="Texture" id=73]
+[ext_resource path="res://assets/countries/china1.png" type="Texture" id=74]
+[ext_resource path="res://assets/countries/easterneurope1.png" type="Texture" id=75]
+[ext_resource path="res://assets/countries/finland1.png" type="Texture" id=76]
+[ext_resource path="res://assets/countries/greenland1.png" type="Texture" id=77]
+[ext_resource path="res://assets/countries/iceland1.png" type="Texture" id=78]
+[ext_resource path="res://assets/countries/india1.png" type="Texture" id=79]
+[ext_resource path="res://assets/countries/indonesia1.png" type="Texture" id=80]
+[ext_resource path="res://assets/countries/iran1.png" type="Texture" id=81]
+[ext_resource path="res://assets/countries/ireland1.png" type="Texture" id=82]
+[ext_resource path="res://assets/countries/japan1.png" type="Texture" id=83]
+[ext_resource path="res://assets/countries/kazakhstan1.png" type="Texture" id=84]
+[ext_resource path="res://assets/countries/korea1.png" type="Texture" id=85]
+[ext_resource path="res://assets/countries/malaysia1.png" type="Texture" id=86]
+[ext_resource path="res://assets/countries/mexico1.png" type="Texture" id=87]
+[ext_resource path="res://assets/countries/mongolia1.png" type="Texture" id=88]
+[ext_resource path="res://assets/countries/newzealand1.png" type="Texture" id=89]
+[ext_resource path="res://assets/countries/northeastafrica1.png" type="Texture" id=90]
+[ext_resource path="res://assets/countries/northwestafrica1.png" type="Texture" id=91]
+[ext_resource path="res://assets/countries/norway1.png" type="Texture" id=92]
+[ext_resource path="res://assets/countries/papuanewguinea1.png" type="Texture" id=93]
+[ext_resource path="res://assets/countries/paraguay1.png" type="Texture" id=94]
+[ext_resource path="res://assets/countries/peru1.png" type="Texture" id=95]
+[ext_resource path="res://assets/countries/phillippines1.png" type="Texture" id=96]
+[ext_resource path="res://assets/countries/russia1.png" type="Texture" id=97]
+[ext_resource path="res://assets/countries/northernsouthamerica1.png" type="Texture" id=98]
+[ext_resource path="res://assets/countries/southasia1.png" type="Texture" id=99]
+[ext_resource path="res://assets/countries/southernafrica1.png" type="Texture" id=100]
+[ext_resource path="res://assets/countries/sweden1.png" type="Texture" id=101]
+[ext_resource path="res://assets/countries/uk1.png" type="Texture" id=102]
+[ext_resource path="res://assets/countries/usa1.png" type="Texture" id=103]
+[ext_resource path="res://assets/countries/uruguay1.png" type="Texture" id=104]
+[ext_resource path="res://assets/countries/westasia1.png" type="Texture" id=105]
+[ext_resource path="res://assets/countries/westeurope1.png" type="Texture" id=106]
+[ext_resource path="res://SettingsOpt.gd" type="Script" id=107]
+[ext_resource path="res://Quit.gd" type="Script" id=108]
+[ext_resource path="res://assets/quitbutton.png" type="Texture" id=109]
+[ext_resource path="res://assets/continuemenubutton.png" type="Texture" id=110]
+[ext_resource path="res://assets/settingsbutton.png" type="Texture" id=111]
+[ext_resource path="res://Continue.gd" type="Script" id=112]
+[ext_resource path="res://assets/backbuttonbig.png" type="Texture" id=113]
+[ext_resource path="res://CountryInfoDetailed.gd" type="Script" id=114]
+[ext_resource path="res://Scroller.tres" type="Theme" id=115]
+[ext_resource path="res://BackButtonCountry.gd" type="Script" id=116]
+[ext_resource path="res://assets/CountryTabL.png" type="Texture" id=117]
+[ext_resource path="res://StatsTabL.gd" type="Script" id=118]
+[ext_resource path="res://assets/WorldTabR.png" type="Texture" id=119]
+[ext_resource path="res://CountryTabL.gd" type="Script" id=120]
+[ext_resource path="res://CountryList.gd" type="Script" id=121]
+[ext_resource path="res://VTtheme.tres" type="Theme" id=122]
+[ext_resource path="res://CountryTab.gd" type="Script" id=123]
+[ext_resource path="res://assets/CountryTab.png" type="Texture" id=124]
+[ext_resource path="res://WorldTabR.gd" type="Script" id=125]
+[ext_resource path="res://assets/StatsTabL.png" type="Texture" id=126]
+[ext_resource path="res://assets/CountryInfoBox.png" type="Texture" id=127]
+[ext_resource path="res://WorldInfo.gd" type="Script" id=128]
+[ext_resource path="res://Stats.gd" type="Script" id=129]
+[ext_resource path="res://StatsTimer.gd" type="Script" id=130]
+[ext_resource path="res://AchievementsList.gd" type="Script" id=131]
+[ext_resource path="res://AchievementsTitle.gd" type="Script" id=132]
+[ext_resource path="res://AchievementInfo.gd" type="Script" id=133]
+[ext_resource path="res://LabButton.gd" type="Script" id=134]
+[ext_resource path="res://assets/labbutton.png" type="Texture" id=135]
+[ext_resource path="res://BackButtonInteract.gd" type="Script" id=136]
+[ext_resource path="res://CreateVirus.gd" type="Script" id=137]
+[ext_resource path="res://CurrentCP.gd" type="Script" id=138]
+[ext_resource path="res://NotEnoughCP.gd" type="Script" id=139]
+[ext_resource path="res://assets/toggle_on.png" type="Texture" id=140]
+[ext_resource path="res://assets/toggle_off.png" type="Texture" id=141]
+[ext_resource path="res://VT2.ttf" type="DynamicFontData" id=142]
+[ext_resource path="res://InteractivityButton.gd" type="Script" id=143]
+[ext_resource path="res://transparent_buttons.tres" type="Theme" id=144]
+[ext_resource path="res://Cancel.gd" type="Script" id=145]
+[ext_resource path="res://SaveSettings.gd" type="Script" id=146]
+[ext_resource path="res://assets/slider.png" type="Texture" id=147]
+[ext_resource path="res://assets/slidergrabber.png" type="Texture" id=148]
+[ext_resource path="res://SaveVirus.gd" type="Script" id=149]
+[ext_resource path="res://DeadlinessSlider.gd" type="Script" id=150]
+[ext_resource path="res://CreateDisaster.gd" type="Script" id=151]
+[ext_resource path="res://CancelDisaster.gd" type="Script" id=152]
+[ext_resource path="res://SaveDisaster.gd" type="Script" id=153]
+[ext_resource path="res://DisasterList.gd" type="Script" id=154]
+[ext_resource path="res://SaveWar.gd" type="Script" id=155]
+[ext_resource path="res://CreateWar.gd" type="Script" id=156]
+[ext_resource path="res://CollapseCostText.gd" type="Script" id=157]
+[ext_resource path="res://Collapse.gd" type="Script" id=158]
+[ext_resource path="res://ConfirmCollapse.gd" type="Script" id=159]
+[ext_resource path="res://CancelCollapse.gd" type="Script" id=160]
+[ext_resource path="res://CollapseCountryList.gd" type="Script" id=161]
+[ext_resource path="res://NoTippingPoints.gd" type="Script" id=162]
+[ext_resource path="res://ShortageList.gd" type="Script" id=163]
+[ext_resource path="res://Shortage.gd" type="Script" id=164]
+[ext_resource path="res://ShortageDownButton.gd" type="Script" id=165]
+[ext_resource path="res://ShortageLengthLabel.gd" type="Script" id=166]
+[ext_resource path="res://ShortageUpButton.gd" type="Script" id=167]
+[ext_resource path="res://VT323.ttf" type="DynamicFontData" id=168]
+[ext_resource path="res://ShortageCostText.gd" type="Script" id=169]
+[ext_resource path="res://ConfirmShortage.gd" type="Script" id=170]
+[ext_resource path="res://assets/x1button.png" type="Texture" id=171]
+[ext_resource path="res://assets/socialmediabutton.png" type="Texture" id=172]
+[ext_resource path="res://SocialMediaButton.gd" type="Script" id=173]
+[ext_resource path="res://SMCloseButton.gd" type="Script" id=174]
+[ext_resource path="res://assets/honkericon.png" type="Texture" id=175]
+[ext_resource path="res://WarCostText.gd" type="Script" id=176]
+[ext_resource path="res://VHonkContainer.gd" type="Script" id=177]
+[ext_resource path="res://OpenSans-Regular.ttf" type="DynamicFontData" id=178]
+[ext_resource path="res://HonkEdit.gd" type="Script" id=179]
+[ext_resource path="res://SendHonk.gd" type="Script" id=180]
+[ext_resource path="res://UnreadHonksText.gd" type="Script" id=181]
+[ext_resource path="res://assets/redcircle.png" type="Texture" id=182]
+[ext_resource path="res://CountryList2.gd" type="Script" id=183]
+[ext_resource path="res://SpeedButton.gd" type="Script" id=184]
+[ext_resource path="res://assets/houses/1.png" type="Texture" id=185]
+[ext_resource path="res://BeginButton.gd" type="Script" id=186]
+[ext_resource path="res://ScrollerTransparent.tres" type="Theme" id=187]
+[ext_resource path="res://assets/mixkit-sci-fi-click-900.mp3" type="AudioStream" id=188]
+[ext_resource path="res://SoundButton.gd" type="Script" id=189]
+[ext_resource path="res://assets/mixkit-single-classic-click-1116.mp3" type="AudioStream" id=190]
+[ext_resource path="res://StartingCountryScroll.gd" type="Script" id=191]
+[ext_resource path="res://DisasterBG.gd" type="Script" id=192]
+[ext_resource path="res://DisasterCostText.gd" type="Script" id=193]
+[ext_resource path="res://assets/rocket.png" type="Texture" id=194]
+[ext_resource path="res://Rocket.gd" type="Script" id=195]
+[ext_resource path="res://assets/explosion.png" type="Texture" id=196]
+[ext_resource path="res://assets/mixkit-arcade-game-explosion-2759.wav" type="AudioStream" id=197]
+[ext_resource path="res://assets/Relaxing Ballad.mp3" type="AudioStream" id=198]
+[ext_resource path="res://MusicButton.gd" type="Script" id=199]
+[ext_resource path="res://YouveUnlocked.gd" type="Script" id=200]
+[ext_resource path="res://CloseUnlockScreen.gd" type="Script" id=201]
+[ext_resource path="res://TutorialButton.gd" type="Script" id=202]
+[ext_resource path="res://Tutorial.gd" type="Script" id=203]
+[ext_resource path="res://TutorialTimer.gd" type="Script" id=204]
+
+[sub_resource type="SpriteFrames" id=27]
+animations = [ {
+"frames": [ ExtResource( 194 ), ExtResource( 196 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=29]
+size = 150
+font_data = ExtResource( 168 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 29
+font_data = ExtResource( 178 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.113725, 0.631373, 0.94902, 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 87
+font_data = ExtResource( 178 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 87
+font_data = ExtResource( 178 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 40
+font_data = ExtResource( 178 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 30
+font_data = ExtResource( 178 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 35
+font_data = ExtResource( 178 )
+
+[sub_resource type="Theme" id=24]
+default_font = SubResource( 23 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 40
+font_data = ExtResource( 178 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 80
+font_data = ExtResource( 168 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 142 )
+
+[sub_resource type="Theme" id=3]
+default_font = SubResource( 2 )
+CheckButton/fonts/font = null
+CheckButton/icons/off = ExtResource( 141 )
+CheckButton/icons/on = ExtResource( 140 )
+
+[sub_resource type="DynamicFont" id=4]
+
+[sub_resource type="DynamicFont" id=26]
+size = 60
+font_data = ExtResource( 168 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.694118, 0.0941176, 0.0941176, 1 )
+
+[sub_resource type="Gradient" id=6]
+colors = PoolColorArray( 0, 0, 0, 0, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 147 )
+region_rect = Rect2( 0, 0, 600, 100 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+
+[sub_resource type="StyleBoxFlat" id=9]
+
+[sub_resource type="DynamicFont" id=10]
+size = 70
+font_data = ExtResource( 168 )
+
+[node name="WorldMap" type="Node2D"]
+script = ExtResource( 13 )
+
+[node name="Map" type="TextureRect" parent="."]
+margin_right = 2148.0
+margin_bottom = 2340.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="MapR" type="TextureRect" parent="."]
+margin_left = 2148.0
+margin_right = 4294.0
+margin_bottom = 2340.0
+texture = ExtResource( 6 )
+
+[node name="Argentina" type="Sprite" parent="."]
+position = Vector2( 1203, 1808 )
+texture = ExtResource( 65 )
+script = ExtResource( 23 )
+
+[node name="Australia" type="Sprite" parent="."]
+position = Vector2( 3623, 1637 )
+texture = ExtResource( 67 )
+script = ExtResource( 24 )
+
+[node name="Bolivia" type="Sprite" parent="."]
+position = Vector2( 1165, 1513 )
+texture = ExtResource( 66 )
+script = ExtResource( 25 )
+
+[node name="Brazil" type="Sprite" parent="."]
+position = Vector2( 1256, 1433 )
+texture = ExtResource( 68 )
+script = ExtResource( 26 )
+
+[node name="Canada" type="Sprite" parent="."]
+position = Vector2( 1036, 359 )
+texture = ExtResource( 69 )
+script = ExtResource( 27 )
+
+[node name="Central Africa" type="Sprite" parent="."]
+position = Vector2( 2340, 1203 )
+texture = ExtResource( 70 )
+script = ExtResource( 28 )
+
+[node name="Central America" type="Sprite" parent="."]
+position = Vector2( 940, 1020 )
+texture = ExtResource( 71 )
+script = ExtResource( 29 )
+
+[node name="Central Asia" type="Sprite" parent="."]
+position = Vector2( 2737, 730 )
+texture = ExtResource( 72 )
+script = ExtResource( 30 )
+
+[node name="Chile" type="Sprite" parent="."]
+position = Vector2( 1122, 1760 )
+texture = ExtResource( 73 )
+script = ExtResource( 31 )
+
+[node name="China" type="Sprite" parent="."]
+position = Vector2( 3167, 741 )
+texture = ExtResource( 74 )
+script = ExtResource( 32 )
+
+[node name="Eastern Europe" type="Sprite" parent="."]
+position = Vector2( 2254, 547 )
+texture = ExtResource( 75 )
+script = ExtResource( 33 )
+
+[node name="Finland" type="Sprite" parent="."]
+position = Vector2( 2238, 317 )
+texture = ExtResource( 76 )
+script = ExtResource( 34 )
+
+[node name="Greenland" type="Sprite" parent="."]
+position = Vector2( 1659, 242 )
+texture = ExtResource( 77 )
+script = ExtResource( 35 )
+
+[node name="Iceland" type="Sprite" parent="."]
+position = Vector2( 1804, 316 )
+texture = ExtResource( 78 )
+script = ExtResource( 36 )
+
+[node name="India" type="Sprite" parent="."]
+position = Vector2( 3000, 933 )
+texture = ExtResource( 79 )
+script = ExtResource( 37 )
+
+[node name="Indonesia" type="Sprite" parent="."]
+position = Vector2( 3479, 1272 )
+texture = ExtResource( 80 )
+script = ExtResource( 38 )
+
+[node name="Iran" type="Sprite" parent="."]
+position = Vector2( 2641, 773 )
+texture = ExtResource( 81 )
+script = ExtResource( 39 )
+
+[node name="Ireland" type="Sprite" parent="."]
+position = Vector2( 1884, 472 )
+texture = ExtResource( 82 )
+script = ExtResource( 40 )
+
+[node name="Japan" type="Sprite" parent="."]
+position = Vector2( 3580, 698 )
+texture = ExtResource( 83 )
+script = ExtResource( 41 )
+
+[node name="Kazakhstan" type="Sprite" parent="."]
+position = Vector2( 2732, 531 )
+texture = ExtResource( 84 )
+script = ExtResource( 42 )
+
+[node name="Korea" type="Sprite" parent="."]
+position = Vector2( 3499, 687 )
+texture = ExtResource( 85 )
+script = ExtResource( 43 )
+
+[node name="Madagascar" type="Sprite" parent="."]
+position = Vector2( 2556, 1519 )
+texture = ExtResource( 5 )
+script = ExtResource( 11 )
+
+[node name="Malaysia" type="Sprite" parent="."]
+position = Vector2( 3371, 1186 )
+texture = ExtResource( 86 )
+script = ExtResource( 44 )
+
+[node name="Mexico" type="Sprite" parent="."]
+position = Vector2( 687, 901 )
+texture = ExtResource( 87 )
+script = ExtResource( 45 )
+
+[node name="Mongolia" type="Sprite" parent="."]
+position = Vector2( 3118, 564 )
+texture = ExtResource( 88 )
+script = ExtResource( 46 )
+
+[node name="New Zealand" type="Sprite" parent="."]
+position = Vector2( 4005, 1841 )
+texture = ExtResource( 89 )
+script = ExtResource( 47 )
+
+[node name="Northeast Africa" type="Sprite" parent="."]
+position = Vector2( 2239, 923 )
+texture = ExtResource( 90 )
+script = ExtResource( 48 )
+
+[node name="Northwest Africa" type="Sprite" parent="."]
+position = Vector2( 1953, 945 )
+texture = ExtResource( 91 )
+script = ExtResource( 49 )
+
+[node name="Norway" type="Sprite" parent="."]
+position = Vector2( 2164, 316 )
+texture = ExtResource( 92 )
+script = ExtResource( 50 )
+
+[node name="Papua New Guinea" type="Sprite" parent="."]
+position = Vector2( 3838, 1331 )
+texture = ExtResource( 93 )
+script = ExtResource( 51 )
+
+[node name="Paraguay" type="Sprite" parent="."]
+position = Vector2( 1240, 1567 )
+texture = ExtResource( 94 )
+script = ExtResource( 52 )
+
+[node name="Peru" type="Sprite" parent="."]
+position = Vector2( 993, 1384 )
+texture = ExtResource( 95 )
+script = ExtResource( 53 )
+
+[node name="Phillippines" type="Sprite" parent="."]
+position = Vector2( 3532, 1057 )
+texture = ExtResource( 96 )
+script = ExtResource( 54 )
+
+[node name="Russia" type="Sprite" parent="."]
+position = Vector2( 3043, 397 )
+texture = ExtResource( 97 )
+script = ExtResource( 55 )
+
+[node name="N South America" type="Sprite" parent="."]
+position = Vector2( 1090, 1181 )
+texture = ExtResource( 98 )
+script = ExtResource( 56 )
+
+[node name="South Asia" type="Sprite" parent="."]
+position = Vector2( 3220, 972 )
+texture = ExtResource( 99 )
+script = ExtResource( 57 )
+
+[node name="Southern Africa" type="Sprite" parent="."]
+position = Vector2( 2292, 1540 )
+texture = ExtResource( 100 )
+script = ExtResource( 58 )
+
+[node name="Sweden" type="Sprite" parent="."]
+position = Vector2( 2153, 354 )
+texture = ExtResource( 101 )
+script = ExtResource( 59 )
+
+[node name="UK" type="Sprite" parent="."]
+position = Vector2( 1943, 446 )
+texture = ExtResource( 102 )
+script = ExtResource( 60 )
+
+[node name="USA" type="Sprite" parent="."]
+position = Vector2( 687, 532 )
+texture = ExtResource( 103 )
+script = ExtResource( 61 )
+
+[node name="Uruguay" type="Sprite" parent="."]
+position = Vector2( 1293, 1717 )
+texture = ExtResource( 104 )
+script = ExtResource( 62 )
+
+[node name="West Asia" type="Sprite" parent="."]
+position = Vector2( 2489, 838 )
+texture = ExtResource( 105 )
+script = ExtResource( 63 )
+
+[node name="West Europe" type="Sprite" parent="."]
+position = Vector2( 2013, 564 )
+texture = ExtResource( 106 )
+script = ExtResource( 64 )
+
+[node name="Rocket" type="AnimatedSprite" parent="."]
+position = Vector2( 1000, 1000 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 27 )
+script = ExtResource( 195 )
+
+[node name="InfoPop" type="Panel" parent="."]
+visible = false
+margin_left = 4365.0
+margin_top = 509.0
+margin_right = 4865.0
+margin_bottom = 869.0
+script = ExtResource( 18 )
+
+[node name="CountryInfo" type="RichTextLabel" parent="InfoPop"]
+margin_right = 500.0
+margin_bottom = 680.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+scroll_active = false
+script = ExtResource( 12 )
+
+[node name="MapCamera" type="Camera2D" parent="."]
+position = Vector2( 2160, 1170 )
+current = true
+script = ExtResource( 1 )
+
+[node name="Tutorial" type="ColorRect" parent="MapCamera"]
+pause_mode = 2
+visible = false
+margin_left = -540.0
+margin_top = -1170.0
+margin_right = 540.0
+margin_bottom = 1170.0
+color = Color( 0, 0, 0, 0.392157 )
+script = ExtResource( 203 )
+
+[node name="MenuArrow" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 341.0
+margin_top = 1926.0
+margin_right = 591.0
+margin_bottom = 1941.0
+rect_rotation = 112.3
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/MenuArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/MenuArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="MenuInfo" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 244.0
+margin_top = 1579.0
+margin_right = 594.0
+margin_bottom = 1879.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="MenuLabel" type="RichTextLabel" parent="MapCamera/Tutorial/MenuInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 290.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to save/quit/ go to settings[/center]"
+text = "tap to save/quit/ go to settings"
+
+[node name="ClockArrow1" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 461.0
+margin_top = 1925.0
+margin_right = 711.0
+margin_bottom = 1940.0
+rect_rotation = 102.4
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/ClockArrow1"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/ClockArrow1"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="ClockInfo1" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 311.0
+margin_top = 1651.0
+margin_right = 661.0
+margin_bottom = 1887.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="ClockLabel" type="RichTextLabel" parent="MapCamera/Tutorial/ClockInfo1"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to pause/start the clock[/center]"
+text = "tap to pause/start the clock"
+
+[node name="ClockArrow2" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 692.0
+margin_top = 1949.0
+margin_right = 942.0
+margin_bottom = 1964.0
+rect_rotation = 56.2
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/ClockArrow2"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/ClockArrow2"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="ClockInfo2" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 428.0
+margin_top = 1685.0
+margin_right = 778.0
+margin_bottom = 1921.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="ClockLabel" type="RichTextLabel" parent="MapCamera/Tutorial/ClockInfo2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to change the clock speed[/center]"
+text = "tap to change the clock speed"
+
+[node name="HonkerArrow" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 825.0
+margin_top = 1945.0
+margin_right = 1075.0
+margin_bottom = 1960.0
+rect_rotation = 56.2
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/HonkerArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/HonkerArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="HonkerInfo" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 567.0
+margin_top = 1686.0
+margin_right = 917.0
+margin_bottom = 1922.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="HonkerLabel" type="RichTextLabel" parent="MapCamera/Tutorial/HonkerInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to see breaking news updates[/center]"
+text = "tap to see breaking news updates"
+
+[node name="LabArrow" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 843.0
+margin_top = 416.0
+margin_right = 1093.0
+margin_bottom = 431.0
+rect_rotation = -66.0
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/LabArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/LabArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="LabInfo" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 582.0
+margin_top = 445.0
+margin_right = 932.0
+margin_bottom = 681.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="LabLabel" type="RichTextLabel" parent="MapCamera/Tutorial/LabInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to go to the climate lab[/center]"
+text = "tap to go to the climate lab"
+
+[node name="InfoArrow" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 310.0
+margin_top = 397.0
+margin_right = 560.0
+margin_bottom = 412.0
+rect_rotation = -125.4
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/InfoArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/InfoArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="InfoInfo" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 259.0
+margin_top = 427.0
+margin_right = 609.0
+margin_bottom = 663.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="InfoLabel" type="RichTextLabel" parent="MapCamera/Tutorial/InfoInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to view more stats and info[/center]"
+text = "tap to view more stats and info"
+
+[node name="CountryInfoArrow" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 626.0
+margin_top = 1412.0
+margin_right = 876.0
+margin_bottom = 1427.0
+rect_rotation = -125.4
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/CountryInfoArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/CountryInfoArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="CountryInfo" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 532.0
+margin_top = 1440.0
+margin_right = 882.0
+margin_bottom = 1676.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="CountryInfoLabel" type="RichTextLabel" parent="MapCamera/Tutorial/CountryInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap a country to see stats[/center]"
+text = "tap a country to see stats"
+
+[node name="LabArrow2" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 843.0
+margin_top = 416.0
+margin_right = 1093.0
+margin_bottom = 431.0
+rect_rotation = -66.0
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/Tutorial/LabArrow2"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/Tutorial/LabArrow2"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="LabInfo2" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 582.0
+margin_top = 445.0
+margin_right = 932.0
+margin_bottom = 681.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="LabLabel" type="RichTextLabel" parent="MapCamera/Tutorial/LabInfo2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]
+let's make a virus[/center]"
+text = "
+let's make a virus"
+
+[node name="TutorialTimer" type="Timer" parent="MapCamera/Tutorial"]
+script = ExtResource( 204 )
+
+[node name="TutorialInstruct" type="Label" parent="MapCamera/Tutorial"]
+margin_left = 90.0
+margin_top = 201.0
+margin_right = 990.0
+margin_bottom = 504.0
+theme = ExtResource( 9 )
+custom_fonts/font = SubResource( 29 )
+text = "tutorial
+tap to advance"
+align = 1
+
+[node name="EndMessage" type="ColorRect" parent="MapCamera/Tutorial"]
+visible = false
+margin_left = 365.0
+margin_top = 1020.0
+margin_right = 715.0
+margin_bottom = 1320.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="EndLabel" type="RichTextLabel" parent="MapCamera/Tutorial/EndMessage"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 290.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]have fun! and remember to donate! [/center]"
+text = "have fun! and remember to donate! "
+
+[node name="MenuButton" type="TextureButton" parent="MapCamera"]
+margin_left = -500.5
+margin_top = 1020.0
+margin_right = -230.5
+margin_bottom = 1128.0
+texture_normal = ExtResource( 4 )
+script = ExtResource( 3 )
+
+[node name="Clock" type="Panel" parent="MapCamera"]
+margin_left = -211.0
+margin_top = 1026.0
+margin_right = 361.0
+margin_bottom = 1126.0
+script = ExtResource( 21 )
+
+[node name="DateTimer" type="Timer" parent="MapCamera/Clock"]
+script = ExtResource( 16 )
+
+[node name="Date" type="Label" parent="MapCamera/Clock"]
+margin_left = 115.0
+margin_top = 14.0
+margin_right = 435.0
+margin_bottom = 87.0
+theme = ExtResource( 22 )
+script = ExtResource( 19 )
+
+[node name="PauseButton" type="TextureButton" parent="MapCamera/Clock"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 95.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 17 )
+script = ExtResource( 20 )
+
+[node name="SpeedButton" type="TextureButton" parent="MapCamera/Clock"]
+margin_left = 477.0
+margin_top = 5.0
+margin_right = 567.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 171 )
+script = ExtResource( 184 )
+
+[node name="InfoButton" type="TextureButton" parent="MapCamera"]
+margin_left = -495.0
+margin_top = -1125.0
+margin_right = -375.0
+margin_bottom = -1005.0
+texture_normal = ExtResource( 7 )
+script = ExtResource( 8 )
+
+[node name="LabButton" type="TextureButton" parent="MapCamera"]
+margin_left = 375.0
+margin_top = -1125.0
+margin_right = 495.0
+margin_bottom = -1005.0
+texture_normal = ExtResource( 135 )
+script = ExtResource( 134 )
+
+[node name="SocialMediaButton" type="TextureButton" parent="MapCamera"]
+margin_left = 380.5
+margin_top = 1015.0
+margin_right = 500.5
+margin_bottom = 1135.0
+texture_normal = ExtResource( 172 )
+script = ExtResource( 173 )
+
+[node name="UnreadHonks" type="TextureRect" parent="MapCamera/SocialMediaButton"]
+margin_left = 85.0
+margin_top = -15.0
+margin_right = 135.0
+margin_bottom = 35.0
+texture = ExtResource( 182 )
+
+[node name="UnreadHonksText" type="Label" parent="MapCamera/SocialMediaButton/UnreadHonks"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 45.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 25 )
+text = "1"
+align = 1
+script = ExtResource( 181 )
+
+[node name="SocialMediaPage" type="Panel" parent="MapCamera"]
+pause_mode = 2
+visible = false
+margin_left = -525.0
+margin_top = -900.0
+margin_right = 525.0
+margin_bottom = 800.0
+custom_styles/panel = SubResource( 11 )
+
+[node name="SMCloseButton" type="Button" parent="MapCamera/SocialMediaPage"]
+margin_left = 20.0
+margin_right = 80.0
+margin_bottom = 119.0
+theme = ExtResource( 144 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "x"
+script = ExtResource( 174 )
+
+[node name="HonkerTitle" type="RichTextLabel" parent="MapCamera/SocialMediaPage"]
+margin_left = 250.0
+margin_top = 10.0
+margin_right = 750.0
+margin_bottom = 130.0
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 13 )
+bbcode_enabled = true
+bbcode_text = "[center]honker[/center]"
+text = "honker"
+
+[node name="HonkContainer" type="ScrollContainer" parent="MapCamera/SocialMediaPage"]
+margin_left = 15.0
+margin_top = 480.0
+margin_right = 1050.0
+margin_bottom = 1680.0
+rect_min_size = Vector2( 1030, 1200 )
+theme = ExtResource( 115 )
+
+[node name="VHonkContainer" type="VBoxContainer" parent="MapCamera/SocialMediaPage/HonkContainer"]
+margin_right = 970.0
+margin_bottom = 1200.0
+rect_min_size = Vector2( 970, 1200 )
+custom_constants/separation = 5
+script = ExtResource( 177 )
+
+[node name="Honk" type="Panel" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer"]
+margin_right = 970.0
+margin_bottom = 375.0
+rect_min_size = Vector2( 970, 375 )
+
+[node name="Outline" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk"]
+margin_left = 10.0
+margin_top = 45.0
+margin_right = 190.0
+margin_bottom = 225.0
+color = Color( 0.388235, 0.388235, 0.388235, 1 )
+
+[node name="ProfilePicture" type="TextureRect" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk/Outline"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 170.0
+margin_bottom = 170.0
+texture = ExtResource( 175 )
+
+[node name="HonkText" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk"]
+margin_left = 200.0
+margin_top = 10.0
+margin_right = 960.0
+margin_bottom = 315.0
+custom_fonts/normal_font = SubResource( 20 )
+text = "Welcome to Honker! You'll find important (and unimportant) messages from residents of the world's many countries here."
+
+[node name="Username" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk"]
+margin_left = 25.0
+margin_top = 325.0
+margin_right = 225.0
+margin_bottom = 375.0
+custom_fonts/normal_font = SubResource( 21 )
+text = "@HonkerHelp"
+
+[node name="Date" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk"]
+margin_left = 497.0
+margin_top = 325.0
+margin_right = 960.0
+margin_bottom = 375.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 21 )
+bbcode_enabled = true
+bbcode_text = "[center]January 2020 via Honker app[/center]"
+text = "January 2020 via Honker app"
+
+[node name="Line" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer/Honk"]
+margin_left = 10.0
+margin_top = 325.0
+margin_right = 960.0
+margin_bottom = 326.0
+
+[node name="SendHonk" type="Button" parent="MapCamera/SocialMediaPage"]
+margin_left = 890.0
+margin_top = 230.0
+margin_right = 1040.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 50, 0 )
+theme = SubResource( 24 )
+text = "HONK!"
+script = ExtResource( 180 )
+
+[node name="HonkEdit" type="TextEdit" parent="MapCamera/SocialMediaPage"]
+margin_left = 11.0
+margin_top = 140.0
+margin_right = 881.0
+margin_bottom = 440.0
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+custom_colors/code_folding_color = Color( 0, 0, 0, 1 )
+custom_colors/function_color = Color( 0, 0, 0, 1 )
+custom_colors/safe_line_number_color = Color( 0, 0, 0, 1 )
+custom_colors/symbol_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+custom_colors/number_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_readonly = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 22 )
+syntax_highlighting = true
+wrap_enabled = true
+script = ExtResource( 179 )
+
+[node name="HonkerArrow4" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 296.0
+margin_top = 256.0
+margin_right = 546.0
+margin_bottom = 271.0
+rect_rotation = -141.9
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow4"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow4"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="HonkerInfo4" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 325.0
+margin_top = 200.0
+margin_right = 675.0
+margin_bottom = 436.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="HonkerLabel4" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkerInfo4"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap the X to exit Honker[/center]"
+text = "tap the X to exit Honker"
+
+[node name="HonkerArrow2" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 588.0
+margin_top = 293.0
+margin_right = 838.0
+margin_bottom = 308.0
+rect_rotation = 0.1
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow2"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow2"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="HonkerInfo2" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 209.0
+margin_top = 175.0
+margin_right = 559.0
+margin_bottom = 411.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="HonkerLabel2" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkerInfo2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]type your Honk then click HONK![/center]"
+text = "type your Honk then click HONK!"
+
+[node name="HonkerArrow3" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 540.0
+margin_top = 1150.0
+margin_right = 790.0
+margin_bottom = 1165.0
+rect_rotation = -90.0
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow3"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="MapCamera/SocialMediaPage/HonkerArrow3"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="HonkerInfo3" type="ColorRect" parent="MapCamera/SocialMediaPage"]
+visible = false
+margin_left = 371.0
+margin_top = 1198.0
+margin_right = 721.0
+margin_bottom = 1434.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="HonkerLabel3" type="RichTextLabel" parent="MapCamera/SocialMediaPage/HonkerInfo3"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]view all past Honks here[/center]"
+text = "view all past Honks here"
+
+[node name="Background" type="ColorRect" parent="MapCamera"]
+pause_mode = 2
+visible = false
+margin_left = -540.0
+margin_top = -1170.0
+margin_right = 540.0
+margin_bottom = 1170.0
+color = Color( 0, 0, 0, 0.309804 )
+
+[node name="Quit" type="TextureButton" parent="MapCamera/Background"]
+margin_left = 236.0
+margin_top = 1766.0
+margin_right = 844.0
+margin_bottom = 2009.0
+texture_normal = ExtResource( 109 )
+script = ExtResource( 108 )
+
+[node name="SettingsOpt" type="TextureButton" parent="MapCamera/Background"]
+margin_left = 236.0
+margin_top = 1466.0
+margin_right = 844.0
+margin_bottom = 1709.0
+texture_normal = ExtResource( 111 )
+script = ExtResource( 107 )
+
+[node name="Continue" type="TextureButton" parent="MapCamera/Background"]
+margin_left = 236.0
+margin_top = 1166.0
+margin_right = 844.0
+margin_bottom = 1409.0
+texture_normal = ExtResource( 110 )
+script = ExtResource( 112 )
+
+[node name="PausedText" type="RichTextLabel" parent="MapCamera/Background"]
+margin_left = 239.0
+margin_top = 416.0
+margin_right = 842.0
+margin_bottom = 683.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]paused[/center]"
+text = "paused"
+
+[node name="WelcomeMessage" type="Panel" parent="MapCamera"]
+pause_mode = 2
+visible = false
+margin_left = -300.0
+margin_top = -500.0
+margin_right = 300.0
+margin_bottom = 500.0
+
+[node name="Welcome" type="RichTextLabel" parent="MapCamera/WelcomeMessage"]
+margin_left = 25.0
+margin_top = 100.0
+margin_right = 575.0
+margin_bottom = 837.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]Welcome to Anthropogenia!
+
+Your task is to destroy the climate and kill as many people as possible. If you kill at least 80& of the population, you win. Have fun![/center]"
+text = "Welcome to Anthropogenia!
+
+Your task is to destroy the climate and kill as many people as possible. If you kill at least 80& of the population, you win. Have fun!"
+
+[node name="BeginButton" type="Button" parent="MapCamera/WelcomeMessage"]
+margin_left = 150.0
+margin_top = 850.0
+margin_right = 458.0
+margin_bottom = 960.0
+theme = ExtResource( 144 )
+text = "-begin-"
+script = ExtResource( 186 )
+
+[node name="Achievement" type="Panel" parent="MapCamera"]
+pause_mode = 2
+visible = false
+margin_left = -400.0
+margin_top = -175.0
+margin_right = 400.0
+margin_bottom = 175.0
+
+[node name="Congratulations" type="RichTextLabel" parent="MapCamera/Achievement"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 796.0
+margin_bottom = 346.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]Congratulations![/center]"
+text = "Congratulations!"
+
+[node name="YouveUnlocked" type="RichTextLabel" parent="MapCamera/Achievement"]
+margin_left = 4.0
+margin_top = 115.0
+margin_right = 796.0
+margin_bottom = 255.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]You've unlocked the  achievement![/center]"
+text = "You've unlocked the  achievement!"
+script = ExtResource( 200 )
+
+[node name="CloseUnlockScreen" type="Button" parent="MapCamera/Achievement"]
+margin_left = 180.0
+margin_top = 230.0
+margin_right = 620.0
+margin_bottom = 340.0
+theme = ExtResource( 144 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "-continue-"
+script = ExtResource( 201 )
+
+[node name="SettingsBackground" type="ColorRect" parent="."]
+pause_mode = 2
+margin_left = 4294.0
+margin_right = 5374.0
+margin_bottom = 2340.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BackButtonSettings" type="Button" parent="SettingsBackground"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 980.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 10 )
+
+[node name="Title" type="RichTextLabel" parent="SettingsBackground"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]settings[/center]"
+text = "settings"
+
+[node name="InteractivityText" type="RichTextLabel" parent="SettingsBackground"]
+margin_left = 100.0
+margin_top = 550.0
+margin_right = 750.0
+margin_bottom = 700.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]interactivity[/center]"
+text = "interactivity"
+
+[node name="InteractivityButton" type="CheckButton" parent="SettingsBackground"]
+margin_left = 763.0
+margin_top = 550.0
+margin_right = 895.0
+margin_bottom = 618.0
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+script = ExtResource( 143 )
+
+[node name="SaveSettings" type="Button" parent="SettingsBackground"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-save-"
+script = ExtResource( 146 )
+
+[node name="Sound" type="RichTextLabel" parent="SettingsBackground"]
+margin_left = 100.0
+margin_top = 900.0
+margin_right = 750.0
+margin_bottom = 1050.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]sound on/off[/center]"
+text = "sound on/off"
+
+[node name="SoundButton" type="CheckButton" parent="SettingsBackground"]
+margin_left = 763.0
+margin_top = 900.0
+margin_right = 895.0
+margin_bottom = 968.0
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+script = ExtResource( 189 )
+
+[node name="Music" type="RichTextLabel" parent="SettingsBackground"]
+margin_left = 100.0
+margin_top = 1250.0
+margin_right = 750.0
+margin_bottom = 1400.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]music on/off[/center]"
+text = "music on/off"
+
+[node name="MusicButton" type="CheckButton" parent="SettingsBackground"]
+margin_left = 763.0
+margin_top = 1250.0
+margin_right = 895.0
+margin_bottom = 1318.0
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+script = ExtResource( 199 )
+
+[node name="TutorialSetting" type="RichTextLabel" parent="SettingsBackground"]
+visible = false
+margin_left = 100.0
+margin_top = 1600.0
+margin_right = 750.0
+margin_bottom = 1750.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]tutorial[/center]"
+text = "tutorial"
+
+[node name="TutorialButton" type="CheckButton" parent="SettingsBackground"]
+visible = false
+margin_left = 763.0
+margin_top = 1600.0
+margin_right = 895.0
+margin_bottom = 1668.0
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+script = ExtResource( 202 )
+
+[node name="StatsBG" type="ColorRect" parent="."]
+margin_top = 2340.0
+margin_right = 1080.0
+margin_bottom = 4680.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="StatsBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]stats[/center]"
+text = "stats"
+
+[node name="CountryTab" type="TextureButton" parent="StatsBG"]
+margin_left = 945.0
+margin_top = 900.0
+margin_right = 1080.0
+margin_bottom = 1440.0
+texture_normal = ExtResource( 124 )
+script = ExtResource( 123 )
+
+[node name="Stats" type="RichTextLabel" parent="StatsBG"]
+pause_mode = 2
+margin_left = 170.0
+margin_top = 400.0
+margin_right = 910.0
+margin_bottom = 820.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+scroll_active = false
+script = ExtResource( 129 )
+
+[node name="StatsTimer" type="Timer" parent="StatsBG/Stats"]
+pause_mode = 2
+script = ExtResource( 130 )
+
+[node name="AchievementsTitle" type="RichTextLabel" parent="StatsBG"]
+margin_left = 150.0
+margin_top = 850.0
+margin_right = 930.0
+margin_bottom = 1050.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]achievements[/center]"
+text = "achievements"
+script = ExtResource( 132 )
+
+[node name="AchievementsScroll" type="ScrollContainer" parent="StatsBG"]
+margin_left = 150.0
+margin_top = 1065.0
+margin_right = 930.0
+margin_bottom = 1630.0
+
+[node name="AchievementsList" type="ItemList" parent="StatsBG/AchievementsScroll"]
+margin_right = 780.0
+margin_bottom = 565.0
+rect_min_size = Vector2( 780, 565 )
+theme = ExtResource( 122 )
+script = ExtResource( 131 )
+
+[node name="AchievementBG" type="ColorRect" parent="StatsBG"]
+margin_left = 150.0
+margin_top = 1715.0
+margin_right = 930.0
+margin_bottom = 2205.0
+
+[node name="AchievementInfo" type="ColorRect" parent="StatsBG/AchievementBG"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 770.0
+margin_bottom = 480.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 133 )
+
+[node name="AchievementDetails" type="RichTextLabel" parent="StatsBG/AchievementBG/AchievementInfo"]
+margin_left = 190.0
+margin_top = 10.0
+margin_right = 750.0
+margin_bottom = 460.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+
+[node name="Achievement" type="ColorRect" parent="StatsBG/AchievementBG"]
+margin_left = 20.0
+margin_top = 165.0
+margin_right = 190.0
+margin_bottom = 335.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AchievementIcon" type="TextureRect" parent="StatsBG/AchievementBG"]
+margin_left = 20.0
+margin_top = 150.0
+margin_right = 190.0
+margin_bottom = 320.0
+
+[node name="CountryBG" type="ColorRect" parent="."]
+margin_left = 1080.0
+margin_top = 2340.0
+margin_right = 2160.0
+margin_bottom = 4680.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="CountryBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]country[/center]"
+text = "country"
+
+[node name="BackButtonCountry" type="TextureButton" parent="CountryBG"]
+margin_left = 300.0
+margin_top = 2120.0
+margin_right = 780.0
+margin_bottom = 2300.0
+texture_normal = ExtResource( 113 )
+script = ExtResource( 116 )
+
+[node name="ColorRect" type="ColorRect" parent="CountryBG"]
+visible = false
+margin_left = 150.0
+margin_top = 1175.0
+margin_right = 930.0
+margin_bottom = 2115.0
+color = Color( 0.584314, 0.584314, 0.584314, 1 )
+
+[node name="StatsTabL" type="TextureButton" parent="CountryBG"]
+margin_top = 900.0
+margin_right = 135.0
+margin_bottom = 1440.0
+texture_normal = ExtResource( 126 )
+script = ExtResource( 118 )
+
+[node name="WorldTabR" type="TextureButton" parent="CountryBG"]
+margin_left = 945.0
+margin_top = 900.0
+margin_right = 1080.0
+margin_bottom = 1440.0
+texture_normal = ExtResource( 119 )
+script = ExtResource( 125 )
+
+[node name="CountryScroll" type="ScrollContainer" parent="CountryBG"]
+margin_left = 165.0
+margin_top = 372.0
+margin_right = 915.0
+margin_bottom = 993.0
+theme = ExtResource( 115 )
+
+[node name="CountryList" type="ItemList" parent="CountryBG/CountryScroll"]
+margin_right = 750.0
+margin_bottom = 621.0
+rect_min_size = Vector2( 750, 621 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 121 )
+
+[node name="CountryInfoBox" type="TextureRect" parent="CountryBG"]
+margin_left = 150.0
+margin_top = 1043.0
+margin_right = 930.0
+margin_bottom = 2099.0
+texture = ExtResource( 127 )
+
+[node name="CountryInfoDetailed" type="RichTextLabel" parent="CountryBG/CountryInfoBox"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 760.0
+margin_bottom = 1036.0
+theme = ExtResource( 187 )
+custom_fonts/normal_font = SubResource( 26 )
+bbcode_enabled = true
+bbcode_text = "
+
+
+
+
+[center]Choose a country[/center]"
+text = "
+
+
+
+
+Choose a country"
+script = ExtResource( 114 )
+
+[node name="WorldBG" type="ColorRect" parent="."]
+margin_left = 2160.0
+margin_top = 2340.0
+margin_right = 3240.0
+margin_bottom = 4680.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="WorldBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]world[/center]"
+text = "world"
+
+[node name="CountryTabL" type="TextureButton" parent="WorldBG"]
+margin_top = 900.0
+margin_right = 135.0
+margin_bottom = 1440.0
+texture_normal = ExtResource( 117 )
+script = ExtResource( 120 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="WorldBG"]
+margin_left = 140.0
+margin_top = 400.0
+margin_right = 940.0
+margin_bottom = 2300.0
+rect_min_size = Vector2( 800, 1900 )
+theme = ExtResource( 187 )
+
+[node name="WorldInfo" type="RichTextLabel" parent="WorldBG/ScrollContainer"]
+margin_right = 800.0
+margin_bottom = 1900.0
+rect_min_size = Vector2( 800, 1900 )
+theme = ExtResource( 122 )
+bbcode_enabled = true
+script = ExtResource( 128 )
+
+[node name="InteractBG" type="ColorRect" parent="."]
+margin_left = 3240.0
+margin_top = 2340.0
+margin_right = 4320.0
+margin_bottom = 4680.0
+rect_pivot_offset = Vector2( -4948, -87 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="InteractBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]lab[/center]"
+text = "lab"
+
+[node name="BackButtonInteract" type="TextureButton" parent="InteractBG"]
+margin_left = 300.0
+margin_top = 2120.0
+margin_right = 780.0
+margin_bottom = 2300.0
+texture_normal = ExtResource( 113 )
+script = ExtResource( 136 )
+
+[node name="CreateVirus" type="Button" parent="InteractBG"]
+margin_left = 40.0
+margin_top = 450.0
+margin_right = 790.0
+margin_bottom = 650.0
+theme = ExtResource( 144 )
+text = "-new pandemic-"
+script = ExtResource( 137 )
+
+[node name="VirusCost" type="RichTextLabel" parent="InteractBG/CreateVirus"]
+margin_left = 795.0
+margin_top = 72.0
+margin_right = 995.0
+margin_bottom = 200.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]100 CP[/center]"
+text = "100 CP"
+
+[node name="CreateDisaster" type="Button" parent="InteractBG"]
+margin_left = 40.0
+margin_top = 670.0
+margin_right = 790.0
+margin_bottom = 870.0
+theme = ExtResource( 144 )
+text = "-create disaster-"
+script = ExtResource( 151 )
+
+[node name="DisasterCost" type="RichTextLabel" parent="InteractBG/CreateDisaster"]
+margin_left = 808.0
+margin_top = 72.0
+margin_right = 1028.0
+margin_bottom = 200.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]-100 CP[/center]"
+text = "-100 CP"
+
+[node name="CreateWar" type="Button" parent="InteractBG"]
+margin_left = 40.0
+margin_top = 890.0
+margin_right = 790.0
+margin_bottom = 1090.0
+theme = ExtResource( 144 )
+text = "-start war-"
+script = ExtResource( 156 )
+
+[node name="WarCost" type="RichTextLabel" parent="InteractBG/CreateWar"]
+margin_left = 774.0
+margin_top = 72.0
+margin_right = 1009.0
+margin_bottom = 200.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]-1000+ CP[/center]"
+text = "-1000+ CP"
+
+[node name="Collapse" type="Button" parent="InteractBG"]
+margin_left = 40.0
+margin_top = 1110.0
+margin_right = 832.0
+margin_bottom = 1310.0
+theme = ExtResource( 144 )
+text = "-collapse country-"
+script = ExtResource( 158 )
+
+[node name="CollapseCost" type="RichTextLabel" parent="InteractBG/Collapse"]
+margin_left = 784.0
+margin_top = 72.0
+margin_right = 1044.0
+margin_bottom = 280.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]-1000+ CP[/center]"
+text = "-1000+ CP"
+
+[node name="Shortage" type="Button" parent="InteractBG"]
+margin_left = 40.0
+margin_top = 1330.0
+margin_right = 790.0
+margin_bottom = 1530.0
+theme = ExtResource( 144 )
+text = "-new shortage-"
+script = ExtResource( 164 )
+
+[node name="ShortageCost" type="RichTextLabel" parent="InteractBG/Shortage"]
+margin_left = 787.0
+margin_top = 72.0
+margin_right = 1041.0
+margin_bottom = 200.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]-2000+ CP[/center]"
+text = "-2000+ CP"
+
+[node name="TippingPoint" type="Button" parent="InteractBG"]
+visible = false
+margin_left = 40.0
+margin_top = 1550.0
+margin_right = 790.0
+margin_bottom = 1750.0
+theme = ExtResource( 144 )
+text = "-tipping point-"
+
+[node name="TippingPointCost" type="RichTextLabel" parent="InteractBG/TippingPoint"]
+margin_left = 817.0
+margin_top = 72.0
+margin_right = 1038.0
+margin_bottom = 200.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]0 CP[/center]"
+text = "0 CP"
+
+[node name="CurrentCP" type="RichTextLabel" parent="InteractBG"]
+margin_left = 180.0
+margin_top = 1914.0
+margin_right = 930.0
+margin_bottom = 2029.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]current CP:[/center]"
+text = "current CP:"
+script = ExtResource( 138 )
+
+[node name="NotEnoughCP" type="PopupDialog" parent="InteractBG"]
+margin_right = 750.0
+margin_bottom = 200.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 139 )
+
+[node name="NotEnoughCPText" type="RichTextLabel" parent="InteractBG/NotEnoughCP"]
+margin_top = 50.0
+margin_right = 750.0
+margin_bottom = 200.0
+bbcode_enabled = true
+bbcode_text = "[center]not enough CP[/center]"
+text = "not enough CP"
+
+[node name="NoTippingPoints" type="PopupDialog" parent="InteractBG"]
+margin_right = 750.0
+margin_bottom = 200.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 162 )
+
+[node name="NoTippingPointsText" type="RichTextLabel" parent="InteractBG/NoTippingPoints"]
+margin_top = 36.0
+margin_right = 750.0
+margin_bottom = 200.0
+bbcode_enabled = true
+bbcode_text = "[center]no tipping points[/center]"
+text = "no tipping points"
+
+[node name="TutorialLab" type="ColorRect" parent="InteractBG"]
+pause_mode = 2
+visible = false
+margin_right = 1080.0
+margin_bottom = 2340.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="LabArrow" type="ColorRect" parent="InteractBG/TutorialLab"]
+visible = false
+margin_left = 548.0
+margin_top = 1595.0
+margin_right = 798.0
+margin_bottom = 1610.0
+rect_rotation = 90.0
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="InteractBG/TutorialLab/LabArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="InteractBG/TutorialLab/LabArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="LabInfo" type="ColorRect" parent="InteractBG/TutorialLab"]
+visible = false
+margin_left = 296.0
+margin_top = 1051.0
+margin_right = 796.0
+margin_bottom = 1501.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="LabLabel" type="RichTextLabel" parent="InteractBG/TutorialLab/LabInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 440.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]earn carbon points (CP) by killing people,  then use CP to kill more people in various ways[/center]"
+text = "earn carbon points (CP) by killing people,  then use CP to kill more people in various ways"
+
+[node name="LabArrow2" type="ColorRect" parent="InteractBG/TutorialLab"]
+visible = false
+margin_left = 554.0
+margin_top = 946.0
+margin_right = 804.0
+margin_bottom = 961.0
+rect_rotation = -101.6
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="InteractBG/TutorialLab/LabArrow2"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="InteractBG/TutorialLab/LabArrow2"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="LabInfo2" type="ColorRect" parent="InteractBG/TutorialLab"]
+visible = false
+margin_left = 432.0
+margin_top = 1024.0
+margin_right = 782.0
+margin_bottom = 1260.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="LabLabel" type="RichTextLabel" parent="InteractBG/TutorialLab/LabInfo2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 226.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]tap to create a virus[/center]"
+text = "tap to create a virus"
+
+[node name="VirusLabBG" type="ColorRect" parent="."]
+margin_left = 4320.0
+margin_top = 2340.0
+margin_right = 5400.0
+margin_bottom = 4680.0
+rect_pivot_offset = Vector2( -4948, -87 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]virus[/center]"
+text = "virus"
+
+[node name="SaveVirus" type="Button" parent="VirusLabBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+script = ExtResource( 149 )
+
+[node name="Cancel" type="Button" parent="VirusLabBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 145 )
+
+[node name="Name" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 400.0
+margin_bottom = 630.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]name[/center]"
+text = "name"
+
+[node name="NameEdit" type="LineEdit" parent="VirusLabBG"]
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 914.0
+margin_bottom = 615.0
+theme = ExtResource( 122 )
+align = 1
+max_length = 12
+placeholder_text = "Dogpox"
+
+[node name="DeadlinessText" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 290.0
+margin_top = 800.0
+margin_right = 790.0
+margin_bottom = 930.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]deadliness[/center]"
+text = "deadliness"
+
+[node name="StartingCountryText" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 200.0
+margin_top = 1300.0
+margin_right = 880.0
+margin_bottom = 1430.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]starting country[/center]"
+text = "starting country"
+
+[node name="DeadlinessSlider" type="HSlider" parent="VirusLabBG"]
+margin_left = 240.0
+margin_top = 990.0
+margin_right = 840.0
+margin_bottom = 1090.0
+custom_icons/tick = SubResource( 7 )
+custom_icons/grabber_highlight = ExtResource( 148 )
+custom_icons/grabber = ExtResource( 148 )
+custom_styles/slider = SubResource( 5 )
+custom_styles/grabber_area_highlight = SubResource( 8 )
+custom_styles/grabber_area = SubResource( 9 )
+script = ExtResource( 150 )
+
+[node name="ContagiousText" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 157.0
+margin_top = 900.0
+margin_right = 923.0
+margin_bottom = 970.0
+theme = ExtResource( 14 )
+bbcode_text = "more deadly = less contagious"
+text = "more deadly = less contagious"
+
+[node name="Least" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 182.0
+margin_top = 1093.0
+margin_right = 319.0
+margin_bottom = 1193.0
+theme = ExtResource( 14 )
+bbcode_text = "least"
+text = "least"
+
+[node name="Most" type="RichTextLabel" parent="VirusLabBG"]
+margin_left = 800.0
+margin_top = 1093.0
+margin_right = 937.0
+margin_bottom = 1193.0
+theme = ExtResource( 14 )
+bbcode_text = "most"
+text = "most"
+
+[node name="StartingCountryScroll" type="ScrollContainer" parent="VirusLabBG"]
+margin_left = 165.0
+margin_top = 1450.0
+margin_right = 915.0
+margin_bottom = 2071.0
+theme = ExtResource( 115 )
+script = ExtResource( 191 )
+
+[node name="CountryList" type="ItemList" parent="VirusLabBG/StartingCountryScroll"]
+margin_right = 750.0
+margin_bottom = 621.0
+rect_min_size = Vector2( 750, 621 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 121 )
+
+[node name="LabArrow" type="ColorRect" parent="VirusLabBG"]
+visible = false
+margin_left = 532.0
+margin_top = 951.0
+margin_right = 782.0
+margin_bottom = 966.0
+rect_rotation = -75.1
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point1" type="ColorRect" parent="VirusLabBG/LabArrow"]
+margin_left = 235.815
+margin_top = 7.3939
+margin_right = 310.815
+margin_bottom = 22.3939
+rect_rotation = 135.4
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="Point2" type="ColorRect" parent="VirusLabBG/LabArrow"]
+margin_left = 237.04
+margin_top = 0.15
+margin_right = 312.04
+margin_bottom = 15.15
+rect_rotation = -135.0
+rect_pivot_offset = Vector2( 11.1477, 6.85132 )
+color = Color( 1, 0.917647, 0.231373, 1 )
+
+[node name="LabInfo" type="ColorRect" parent="VirusLabBG"]
+visible = false
+margin_left = 296.0
+margin_top = 1051.0
+margin_right = 796.0
+margin_bottom = 1501.0
+color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[node name="LabLabel" type="RichTextLabel" parent="VirusLabBG/LabInfo"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 440.0
+theme = ExtResource( 14 )
+bbcode_enabled = true
+bbcode_text = "[center]you can create and customize your new virus here to make it as deadly as possible[/center]"
+text = "you can create and customize your new virus here to make it as deadly as possible"
+
+[node name="DisasterBG" type="ColorRect" parent="."]
+margin_top = 4680.0
+margin_right = 1080.0
+margin_bottom = 7020.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 192 )
+
+[node name="Title" type="RichTextLabel" parent="DisasterBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]disaster[/center]"
+text = "disaster"
+
+[node name="SaveDisaster" type="Button" parent="DisasterBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+script = ExtResource( 153 )
+
+[node name="CancelDisaster" type="Button" parent="DisasterBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 152 )
+
+[node name="CountryScroll" type="ScrollContainer" parent="DisasterBG"]
+margin_left = 165.0
+margin_top = 1280.0
+margin_right = 915.0
+margin_bottom = 1830.0
+theme = ExtResource( 115 )
+
+[node name="CountryList" type="ItemList" parent="DisasterBG/CountryScroll"]
+margin_right = 750.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 750, 550 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 121 )
+
+[node name="DisasterScroll" type="ScrollContainer" parent="DisasterBG"]
+margin_left = 165.0
+margin_top = 550.0
+margin_right = 915.0
+margin_bottom = 1100.0
+theme = ExtResource( 115 )
+
+[node name="DisasterList" type="ItemList" parent="DisasterBG/DisasterScroll"]
+margin_right = 750.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 750, 550 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 154 )
+
+[node name="CountryText" type="RichTextLabel" parent="DisasterBG"]
+margin_left = 200.0
+margin_top = 1130.0
+margin_right = 880.0
+margin_bottom = 1260.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]country[/center]"
+text = "country"
+
+[node name="DisasterText" type="RichTextLabel" parent="DisasterBG"]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 880.0
+margin_bottom = 530.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]disaster[/center]"
+text = "disaster"
+
+[node name="NotEnoughCP" type="PopupDialog" parent="DisasterBG"]
+margin_left = 50.0
+margin_top = 2072.0
+margin_right = 484.0
+margin_bottom = 2290.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="NotEnoughCPText" type="RichTextLabel" parent="DisasterBG/NotEnoughCP"]
+margin_left = 1.0
+margin_top = -6.0
+margin_right = 435.0
+margin_bottom = 211.0
+bbcode_enabled = true
+bbcode_text = "[center]not enough CP[/center]"
+text = "not enough CP"
+
+[node name="DisasterCostText" type="RichTextLabel" parent="DisasterBG"]
+margin_left = 66.0
+margin_top = 1920.0
+margin_right = 1070.0
+margin_bottom = 2120.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]war cost: 1000 CP[/center]"
+text = "war cost: 1000 CP"
+scroll_active = false
+script = ExtResource( 193 )
+
+[node name="CollapseBG" type="ColorRect" parent="."]
+margin_left = 2160.0
+margin_top = 4680.0
+margin_right = 3240.0
+margin_bottom = 7020.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="CollapseBG"]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]collapse[/center]"
+text = "collapse"
+
+[node name="CollapseText" type="RichTextLabel" parent="CollapseBG"]
+margin_left = 137.5
+margin_top = 400.0
+margin_right = 942.5
+margin_bottom = 530.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]country to collapse[/center]"
+text = "country to collapse"
+
+[node name="CountryScroll" type="ScrollContainer" parent="CollapseBG"]
+margin_left = 165.0
+margin_top = 550.0
+margin_right = 915.0
+margin_bottom = 1350.0
+theme = ExtResource( 115 )
+
+[node name="CollapseCountryList" type="ItemList" parent="CollapseBG/CountryScroll"]
+margin_right = 750.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 750, 800 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 161 )
+
+[node name="ConfirmCollapse" type="Button" parent="CollapseBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+script = ExtResource( 159 )
+
+[node name="CancelCollapse" type="Button" parent="CollapseBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 160 )
+
+[node name="CollapseCostText" type="RichTextLabel" parent="CollapseBG"]
+margin_left = 200.0
+margin_top = 1596.0
+margin_right = 880.0
+margin_bottom = 2061.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]click a country to see the CP required to collapse it[/center]"
+text = "click a country to see the CP required to collapse it"
+script = ExtResource( 157 )
+
+[node name="NotEnoughCP" type="PopupDialog" parent="CollapseBG"]
+margin_left = 50.0
+margin_top = 2072.0
+margin_right = 484.0
+margin_bottom = 2290.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="NotEnoughCPText" type="RichTextLabel" parent="CollapseBG/NotEnoughCP"]
+margin_left = 1.0
+margin_top = -6.0
+margin_right = 435.0
+margin_bottom = 211.0
+bbcode_enabled = true
+bbcode_text = "[center]not enough CP[/center]"
+text = "not enough CP"
+
+[node name="CurrentCP" type="RichTextLabel" parent="CollapseBG"]
+margin_left = 180.0
+margin_top = 1392.0
+margin_right = 930.0
+margin_bottom = 1572.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]current CP:[/center]"
+text = "current CP:"
+script = ExtResource( 138 )
+
+[node name="WarBG" type="ColorRect" parent="."]
+margin_left = 1080.0
+margin_top = 4680.0
+margin_right = 2160.0
+margin_bottom = 7020.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="WarBG"]
+margin_left = 383.0
+margin_top = 108.0
+margin_right = 728.0
+margin_bottom = 373.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]war[/center]"
+text = "war"
+
+[node name="CountryScroll1" type="ScrollContainer" parent="WarBG"]
+margin_left = 165.0
+margin_top = 550.0
+margin_right = 915.0
+margin_bottom = 1100.0
+rect_min_size = Vector2( 750, 550 )
+theme = ExtResource( 115 )
+
+[node name="CountryList1" type="ItemList" parent="WarBG/CountryScroll1"]
+margin_right = 750.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 750, 550 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 121 )
+
+[node name="CountryScroll2" type="ScrollContainer" parent="WarBG"]
+margin_left = 165.0
+margin_top = 1302.0
+margin_right = 915.0
+margin_bottom = 1852.0
+theme = ExtResource( 115 )
+
+[node name="CountryList2" type="ItemList" parent="WarBG/CountryScroll2"]
+margin_right = 750.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 750, 550 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 183 )
+
+[node name="Country1Text" type="RichTextLabel" parent="WarBG"]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 880.0
+margin_bottom = 530.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]country 1[/center]"
+text = "country 1"
+
+[node name="Country2Text" type="RichTextLabel" parent="WarBG"]
+margin_left = 200.0
+margin_top = 1150.0
+margin_right = 880.0
+margin_bottom = 1280.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]country 2[/center]"
+text = "country 2"
+
+[node name="SaveWar" type="Button" parent="WarBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+script = ExtResource( 155 )
+
+[node name="CancelWar" type="Button" parent="WarBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 152 )
+
+[node name="WarCostText" type="RichTextLabel" parent="WarBG"]
+margin_left = 66.0
+margin_top = 1920.0
+margin_right = 1070.0
+margin_bottom = 2120.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]war cost: 1000 CP[/center]"
+text = "war cost: 1000 CP"
+scroll_active = false
+script = ExtResource( 176 )
+
+[node name="NotEnoughCP" type="PopupDialog" parent="WarBG"]
+margin_left = 50.0
+margin_top = 2072.0
+margin_right = 484.0
+margin_bottom = 2290.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="NotEnoughCPText" type="RichTextLabel" parent="WarBG/NotEnoughCP"]
+margin_left = 1.0
+margin_top = -6.0
+margin_right = 435.0
+margin_bottom = 211.0
+bbcode_enabled = true
+bbcode_text = "[center]not enough CP[/center]"
+text = "not enough CP"
+
+[node name="ShortageBG" type="ColorRect" parent="."]
+margin_left = 3240.0
+margin_top = 4680.0
+margin_right = 4320.0
+margin_bottom = 7020.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="ShortageBG"]
+margin_left = 140.0
+margin_top = 108.0
+margin_right = 940.0
+margin_bottom = 373.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]shortage[/center]"
+text = "shortage"
+
+[node name="ConfirmShortage" type="Button" parent="ShortageBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+script = ExtResource( 170 )
+
+[node name="CancelShortage" type="Button" parent="ShortageBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+script = ExtResource( 160 )
+
+[node name="ShortageText" type="RichTextLabel" parent="ShortageBG"]
+margin_left = 137.5
+margin_top = 400.0
+margin_right = 942.5
+margin_bottom = 530.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]choose a shortage[/center]"
+text = "choose a shortage"
+
+[node name="ShortageTimeText" type="RichTextLabel" parent="ShortageBG"]
+margin_left = 50.0
+margin_top = 1744.0
+margin_right = 800.0
+margin_bottom = 1944.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]shortage length:[/center]"
+text = "shortage length:"
+
+[node name="ShortageCostText" type="RichTextLabel" parent="ShortageBG"]
+margin_left = 66.0
+margin_top = 1920.0
+margin_right = 1070.0
+margin_bottom = 2120.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]shortage cost: 2000 CP[/center]"
+text = "shortage cost: 2000 CP"
+script = ExtResource( 169 )
+
+[node name="ShortageScroll" type="ScrollContainer" parent="ShortageBG"]
+margin_left = 165.0
+margin_top = 550.0
+margin_right = 915.0
+margin_bottom = 1650.0
+theme = ExtResource( 115 )
+
+[node name="ShortageList" type="ItemList" parent="ShortageBG/ShortageScroll"]
+margin_right = 750.0
+margin_bottom = 1100.0
+rect_min_size = Vector2( 750, 1100 )
+mouse_filter = 1
+theme = ExtResource( 122 )
+allow_reselect = true
+script = ExtResource( 163 )
+
+[node name="ShortageTimeText2" type="RichTextLabel" parent="ShortageBG"]
+margin_left = 859.0
+margin_top = 1744.0
+margin_right = 1081.0
+margin_bottom = 1944.0
+theme = ExtResource( 122 )
+bbcode_enabled = true
+bbcode_text = "[center]years[/center]"
+text = "years"
+
+[node name="ShortageLengthLabel" type="Label" parent="ShortageBG"]
+margin_left = 775.0
+margin_top = 1744.0
+margin_right = 850.0
+margin_bottom = 1849.0
+theme = ExtResource( 122 )
+text = "1"
+script = ExtResource( 166 )
+
+[node name="ShortageUpButton" type="Button" parent="ShortageBG/ShortageLengthLabel"]
+margin_left = 40.0
+margin_top = -15.0
+margin_right = 85.0
+margin_bottom = 56.0
+theme = ExtResource( 144 )
+custom_fonts/font = SubResource( 10 )
+text = "^"
+script = ExtResource( 167 )
+
+[node name="ShortageDownButton" type="Button" parent="ShortageBG/ShortageLengthLabel"]
+margin_left = 85.0
+margin_top = 127.0
+margin_right = 130.0
+margin_bottom = 198.0
+rect_rotation = 180.0
+theme = ExtResource( 144 )
+custom_fonts/font = SubResource( 10 )
+text = "^"
+script = ExtResource( 165 )
+
+[node name="NotEnoughCP" type="PopupDialog" parent="ShortageBG"]
+margin_left = 50.0
+margin_top = 2072.0
+margin_right = 484.0
+margin_bottom = 2290.0
+theme = ExtResource( 122 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="NotEnoughCPText" type="RichTextLabel" parent="ShortageBG/NotEnoughCP"]
+margin_left = 1.0
+margin_top = -6.0
+margin_right = 435.0
+margin_bottom = 211.0
+bbcode_enabled = true
+bbcode_text = "[center]not enough CP[/center]"
+text = "not enough CP"
+
+[node name="TipPointBG" type="ColorRect" parent="."]
+margin_left = 4320.0
+margin_top = 4680.0
+margin_right = 5400.0
+margin_bottom = 7020.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="RichTextLabel" parent="TipPointBG"]
+margin_left = 85.0
+margin_top = 108.0
+margin_right = 995.0
+margin_bottom = 538.0
+theme = ExtResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]tip point[/center]"
+text = "tip point"
+
+[node name="ConfirmTipPoint" type="Button" parent="TipPointBG"]
+margin_left = 74.0
+margin_top = 2114.0
+margin_right = 454.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-confirm-"
+
+[node name="CancelTipPoint" type="Button" parent="TipPointBG"]
+margin_left = 600.0
+margin_top = 2114.0
+margin_right = 952.0
+margin_bottom = 2254.0
+theme = ExtResource( 144 )
+text = "-cancel-"
+
+[node name="House" type="TextureRect" parent="."]
+visible = false
+margin_left = 698.0
+margin_top = 569.0
+margin_right = 723.0
+margin_bottom = 594.0
+texture = ExtResource( 185 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 188 )
+
+[node name="ShortClick" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 190 )
+
+[node name="Bomb" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 3623, 1637 )
+stream = ExtResource( 197 )
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 198 )
+
+[connection signal="pressed" from="MapCamera/Clock/SpeedButton" to="MapCamera/Clock/DateTimer" method="_on_SpeedButton_pressed"]
+[connection signal="pressed" from="MapCamera/SocialMediaButton" to="MapCamera/SocialMediaButton/UnreadHonks/UnreadHonksText" method="_on_SocialMediaButton_pressed"]
+[connection signal="pressed" from="MapCamera/SocialMediaButton" to="MapCamera/SocialMediaPage/HonkContainer/VHonkContainer" method="_on_SocialMediaButton_pressed"]
+[connection signal="text_changed" from="MapCamera/SocialMediaPage/HonkEdit" to="MapCamera/SocialMediaPage/SendHonk" method="_on_HonkEdit_text_changed"]
+[connection signal="timeout" from="StatsBG/Stats/StatsTimer" to="StatsBG/Stats" method="_on_StatsTimer_timeout"]
+[connection signal="item_selected" from="StatsBG/AchievementsScroll/AchievementsList" to="StatsBG/AchievementBG/AchievementInfo" method="_on_AchievementsList_item_selected"]
+[connection signal="item_selected" from="CountryBG/CountryScroll/CountryList" to="CountryBG/CountryInfoBox/CountryInfoDetailed" method="_on_CountryList_item_selected"]
+[connection signal="pressed" from="InteractBG/Collapse" to="CollapseBG/CountryScroll/CollapseCountryList" method="_on_Collapse_pressed"]
+[connection signal="item_selected" from="VirusLabBG/StartingCountryScroll/CountryList" to="VirusLabBG/StartingCountryScroll" method="_on_CountryList_item_selected"]
+[connection signal="item_selected" from="DisasterBG/CountryScroll/CountryList" to="DisasterBG" method="_on_CountryList_item_selected"]
+[connection signal="item_selected" from="DisasterBG/DisasterScroll/DisasterList" to="DisasterBG" method="_on_DisasterList_item_selected"]
+[connection signal="item_selected" from="DisasterBG/DisasterScroll/DisasterList" to="DisasterBG/DisasterCostText" method="_on_DisasterList_item_selected"]
+[connection signal="item_selected" from="CollapseBG/CountryScroll/CollapseCountryList" to="CollapseBG/CollapseCostText" method="_on_CountryList_item_selected"]
+[connection signal="item_selected" from="WarBG/CountryScroll1/CountryList1" to="WarBG/WarCostText" method="_on_CountryList1_item_selected"]
+[connection signal="item_selected" from="WarBG/CountryScroll2/CountryList2" to="WarBG/WarCostText" method="_on_CountryList2_item_selected"]
+[connection signal="item_selected" from="ShortageBG/ShortageScroll/ShortageList" to="ShortageBG/ShortageLengthLabel" method="_on_ShortageList_item_selected"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageUpButton" to="ShortageBG/ShortageCostText" method="_on_ShortageUpButton_pressed"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageUpButton" to="ShortageBG/ShortageLengthLabel" method="_on_ShortageUpButton_pressed"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageUpButton" to="ShortageBG/ShortageLengthLabel/ShortageDownButton" method="_on_ShortageUpButton_pressed"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageDownButton" to="ShortageBG/ShortageCostText" method="_on_ShortageDownButton_pressed"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageDownButton" to="ShortageBG/ShortageLengthLabel" method="_on_ShortageDownButton_pressed"]
+[connection signal="pressed" from="ShortageBG/ShortageLengthLabel/ShortageDownButton" to="ShortageBG/ShortageLengthLabel/ShortageUpButton" method="_on_ShortageDownButton_pressed"]

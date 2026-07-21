@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/backbuttonbig.png" type="Texture" id=1]
+[ext_resource path="res://assets/Light-And-Balanced-No-Copyright-Music-01-Light-And-Balanced.mp3" type="AudioStream" id=2]
+[ext_resource path="res://CreditsCamera.gd" type="Script" id=3]
+[ext_resource path="res://VTsmalltheme.tres" type="Theme" id=4]
+[ext_resource path="res://assets/mainscreenbuttoncreditsbig.png" type="Texture" id=5]
+[ext_resource path="res://assets/mixkit-sci-fi-click-900.mp3" type="AudioStream" id=6]
+[ext_resource path="res://BackButton.gd" type="Script" id=7]
+[ext_resource path="res://assets/mixkit-single-classic-click-1116.mp3" type="AudioStream" id=8]
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="Polygon2D" parent="."]
+position = Vector2( 3.8147e-06, 3.05176e-05 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 0, 0, 1080, 0, 1080, 4200, 0, 4200 )
+
+[node name="CreditsCamera" type="Camera2D" parent="."]
+position = Vector2( 540, 1170 )
+current = true
+script = ExtResource( 3 )
+
+[node name="CreditsMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Back" type="TextureButton" parent="."]
+margin_left = 300.0
+margin_top = 3878.0
+margin_right = 980.0
+margin_bottom = 4058.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 7 )
+
+[node name="Title" type="TextureRect" parent="."]
+margin_left = 140.0
+margin_top = 204.0
+margin_right = 956.0
+margin_bottom = 384.0
+texture = ExtResource( 5 )
+
+[node name="CreditsData" type="RichTextLabel" parent="."]
+margin_left = 90.0
+margin_top = 450.0
+margin_right = 990.0
+margin_bottom = 3818.0
+theme = ExtResource( 4 )
+text = "developer: Maddie Norwood
+
+music: Liborio Conti & freepd.com
+
+images: Open AI/DALL-E 2 & Pixabay
+
+font: VT323
+
+emissions data: Climate Watch. 2022. Washington, DC: World Resources Institute. Available online at: https://www.climatewatchdata.org.; FAO 2022, FAOSTAT Emissions Database; GHG Emissions from Fuel Combustion, OECD/IEA, 2021; Friedlingstein et al. (2021), Andrew and Peters (2021).; Friedlingstein et al., 2021 : The Global Carbon Budget 2021, Earth System Science Data. Available at: Friedlingstein et al., 2021.; Andrew and Peters, 2021 : The Global Carbon Project's fossil CO2 emissions dataset. Available at: Andrew and Peters, 2021. 
+
+population data: Census.gov
+
+gdp data: The World Bank Group
+
+stability data: The World Bank Group
+
+temperature data: The World Bank Group
+
+(all World Bank Group data licensed under Creative Commons 4.0 Attribution)
+
+temperature rise data: Climate.gov
+
+sound effects: Mixkit (no attribution required)
+
+production cats: Sherlock
+
+please consider donating to help climate change efforts!
+"
+scroll_active = false
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="ShortClick" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 8 )

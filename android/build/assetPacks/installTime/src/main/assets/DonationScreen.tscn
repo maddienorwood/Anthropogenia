@@ -1,0 +1,229 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://ReturnMenu.gd" type="Script" id=1]
+[ext_resource path="res://transparent_buttons.tres" type="Theme" id=2]
+[ext_resource path="res://VTthemebig.tres" type="Theme" id=3]
+[ext_resource path="res://VTtheme.tres" type="Theme" id=4]
+[ext_resource path="res://assets/water_icon.png" type="Texture" id=5]
+[ext_resource path="res://assets/charitybg.png" type="Texture" id=6]
+[ext_resource path="res://VT323.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://assets/tree_icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/earth_icon.png" type="Texture" id=9]
+[ext_resource path="res://assets/wind_icon.png" type="Texture" id=10]
+[ext_resource path="res://VTsmalltheme.tres" type="Theme" id=11]
+[ext_resource path="res://CATFButton.gd" type="Script" id=12]
+[ext_resource path="res://OceanaButton.gd" type="Script" id=13]
+[ext_resource path="res://CoolEarthButton.gd" type="Script" id=14]
+[ext_resource path="res://UoCSButton.gd" type="Script" id=15]
+[ext_resource path="res://assets/mixkit-single-classic-click-1116.mp3" type="AudioStream" id=16]
+[ext_resource path="res://DonationScreen.gd" type="Script" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 140
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 140
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 140
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 140
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 55
+font_data = ExtResource( 7 )
+
+[node name="DonationScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 17 )
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 1080.0
+margin_bottom = 2340.0
+color = Color( 0.141176, 0, 0.2, 1 )
+
+[node name="Title" type="RichTextLabel" parent="BG"]
+margin_left = 190.0
+margin_top = 150.0
+margin_right = 890.0
+margin_bottom = 450.0
+theme = ExtResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[center]donate[/center]"
+text = "donate"
+
+[node name="Intro" type="RichTextLabel" parent="BG"]
+margin_left = 140.0
+margin_top = 418.0
+margin_right = 940.0
+margin_bottom = 868.0
+theme = ExtResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]tap a cause to go to a real-life charity's donation page*[/center]"
+text = "tap a cause to go to a real-life charity's donation page*"
+
+[node name="ReturnMenu" type="Button" parent="BG"]
+margin_left = 303.0
+margin_top = 2098.0
+margin_right = 787.0
+margin_bottom = 2209.0
+theme = ExtResource( 2 )
+text = "-main menu-"
+script = ExtResource( 1 )
+
+[node name="Border" type="ColorRect" parent="BG"]
+margin_left = 90.0
+margin_top = 1054.0
+margin_right = 990.0
+margin_bottom = 1274.0
+
+[node name="OceanaButton" type="TextureButton" parent="BG/Border"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 890.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 13 )
+
+[node name="Oceana" type="RichTextLabel" parent="BG/Border/OceanaButton"]
+margin_left = 241.0
+margin_top = 25.0
+margin_right = 865.0
+margin_bottom = 175.0
+mouse_filter = 2
+theme = ExtResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]water[/center]"
+text = "water"
+
+[node name="OceanIcon" type="TextureRect" parent="BG/Border/OceanaButton"]
+margin_left = 25.0
+margin_top = 20.0
+margin_right = 225.0
+margin_bottom = 220.0
+mouse_filter = 2
+texture = ExtResource( 5 )
+
+[node name="Border2" type="ColorRect" parent="BG"]
+margin_left = 90.0
+margin_top = 1304.0
+margin_right = 990.0
+margin_bottom = 1524.0
+
+[node name="CATFButton" type="TextureButton" parent="BG/Border2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 890.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 12 )
+
+[node name="CATF" type="RichTextLabel" parent="BG/Border2/CATFButton"]
+margin_left = 245.0
+margin_top = 16.0
+margin_right = 870.0
+margin_bottom = 196.0
+mouse_filter = 2
+theme = ExtResource( 11 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[center]air[/center]"
+text = "air"
+
+[node name="WindIcon" type="TextureRect" parent="BG/Border2/CATFButton"]
+margin_left = 75.0
+margin_top = 20.0
+margin_right = 215.0
+margin_bottom = 200.0
+mouse_filter = 2
+texture = ExtResource( 10 )
+
+[node name="Border3" type="ColorRect" parent="BG"]
+margin_left = 90.0
+margin_top = 1554.0
+margin_right = 990.0
+margin_bottom = 1774.0
+
+[node name="CoolEarthButton" type="TextureButton" parent="BG/Border3"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 890.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 14 )
+
+[node name="CoolEarth" type="RichTextLabel" parent="BG/Border3/CoolEarthButton"]
+margin_left = 324.0
+margin_top = 32.0
+margin_right = 812.0
+margin_bottom = 175.0
+mouse_filter = 2
+theme = ExtResource( 2 )
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[center]earth[/center]"
+text = "earth"
+
+[node name="TreeIcon" type="TextureRect" parent="BG/Border3/CoolEarthButton"]
+margin_left = 45.0
+margin_top = 10.0
+margin_right = 245.0
+margin_bottom = 210.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+
+[node name="Border4" type="ColorRect" parent="BG"]
+margin_left = 90.0
+margin_top = 1804.0
+margin_right = 990.0
+margin_bottom = 2024.0
+
+[node name="UoCSButton" type="TextureButton" parent="BG/Border4"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 890.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 6 )
+script = ExtResource( 15 )
+
+[node name="UoCS" type="RichTextLabel" parent="BG/Border4/UoCSButton"]
+margin_left = 249.0
+margin_top = 16.0
+margin_right = 881.0
+margin_bottom = 184.0
+mouse_filter = 2
+theme = ExtResource( 2 )
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]science[/center]"
+text = "science"
+
+[node name="EarthIcon" type="TextureRect" parent="BG/Border4/UoCSButton"]
+margin_left = 35.0
+margin_top = 10.0
+margin_right = 235.0
+margin_bottom = 210.0
+mouse_filter = 2
+texture = ExtResource( 9 )
+
+[node name="Disclaimer" type="RichTextLabel" parent="BG"]
+margin_left = 90.0
+margin_top = 870.0
+margin_right = 990.0
+margin_bottom = 996.0
+theme = ExtResource( 4 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[center]*the charities below are not affiliated with and have not sponsored this app[/center]"
+text = "*the charities below are not affiliated with and have not sponsored this app"
+
+[node name="ShortClick" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 16 )

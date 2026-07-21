@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://VTthemebig.tres" type="Theme" id=1]
+[ext_resource path="res://BackButtonSettings.gd" type="Script" id=2]
+[ext_resource path="res://assets/backbuttonbig.png" type="Texture" id=3]
+
+[node name="SettingsInGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 1080.0
+margin_bottom = 2340.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BackButtonSettings" type="TextureButton" parent="Background"]
+margin_left = 300.0
+margin_top = 2120.0
+margin_right = 780.0
+margin_bottom = 2300.0
+texture_normal = ExtResource( 3 )
+script = ExtResource( 2 )
+
+[node name="Title" type="RichTextLabel" parent="."]
+margin_left = 130.0
+margin_top = 108.0
+margin_right = 950.0
+margin_bottom = 360.0
+theme = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]settings[/center]"
+text = "settings"

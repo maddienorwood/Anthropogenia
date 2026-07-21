@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Light-And-Balanced-No-Copyright-Music-01-Light-And-Balanced.mp3-a089d2b2b6e6616720cda49aa38eca56.mp3str"
+
+[deps]
+
+source_file="res://assets/Light-And-Balanced-No-Copyright-Music-01-Light-And-Balanced.mp3"
+dest_files=[ "res://.import/Light-And-Balanced-No-Copyright-Music-01-Light-And-Balanced.mp3-a089d2b2b6e6616720cda49aa38eca56.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
